@@ -104,7 +104,7 @@ p.fielderror-detail {
     <h1>Geben Sie eine IP und Subnetzmaske ein!</h1>
 
     <form method="post" action="calculate" th:object="${networkInputForm}">
-        <div>
+        <div th:field>
             <label for="ipString">IP-Addresse</label>
             <input  type="text" th:field="*{ipString}" placeholder="z.B: 192.168.1.1" maxlength="15"/>
             <span>
